@@ -1,6 +1,6 @@
 Name:           acoustid-fingerprinter
 Version:        0.5.1
-Release:        %mkrel 1
+Release:        2
 Summary:        Music AcoustID fingerprinting application
 
 Group:          Sound

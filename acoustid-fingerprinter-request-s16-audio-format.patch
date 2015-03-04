@@ -1,0 +1,12 @@
+diff -p -up acoustid-fingerprinter-0.6/decoder.h.ffmpeg acoustid-fingerprinter-0.6/decoder.h
+--- acoustid-fingerprinter-0.6/decoder.h.ffmpeg	2013-04-11 21:55:12.243036748 +0200
++++ acoustid-fingerprinter-0.6/decoder.h	2013-04-11 21:55:57.425964011 +0200
+@@ -186,6 +186,8 @@ inline bool Decoder::Open()
+ 		m_error = "Unknown codec.";
+ 		return false;
+ 	}
++	/* request regular signed 16-bit packed format */
++	m_codec_ctx->request_sample_fmt = AV_SAMPLE_FMT_S16;
+ 
+ #if LIBAVCODEC_VERSION_INT < AV_VERSION_INT(53, 8, 0)
+     if (avcodec_open(m_codec_ctx, codec) < 0) {

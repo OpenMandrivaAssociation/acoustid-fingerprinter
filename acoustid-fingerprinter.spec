@@ -4,7 +4,7 @@ Version:	0.6
 Release:	4
 Group:		Sound
 License:	GPLv2+
-Url:		http://acoustid.org/fingerprinter
+Url:		https://acoustid.org/fingerprinter
 Source0:	https://bitbucket.org/acoustid/acoustid-fingerprinter/downloads/%{name}-%{version}.tar.gz
 Patch0:		acoustid-fingerprinter-request-s16-audio-format.patch
 Patch1:		acoustid-fingerprinter-0.6-ffmpeg-2.0.patch
